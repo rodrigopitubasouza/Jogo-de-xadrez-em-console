@@ -1,4 +1,4 @@
-﻿using tabuleiro;
+﻿/*using tabuleiro;
 
 namespace xadrez {
     class Rainha : Peca {
@@ -9,4 +9,4 @@ namespace xadrez {
         return "D";
     }
 }
-}
+}*/

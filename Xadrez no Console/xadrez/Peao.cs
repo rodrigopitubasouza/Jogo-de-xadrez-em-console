@@ -1,4 +1,4 @@
-﻿using tabuleiro;
+﻿/*using tabuleiro;
 namespace xadrez {
     class Peao : Peca{
         public Peao(Tabuleiro tab, Cor cor) : base(cor, tab) {
@@ -8,4 +8,4 @@ namespace xadrez {
         return "P";
     }
 }
-}
+}*/
