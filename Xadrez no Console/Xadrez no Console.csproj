@@ -47,6 +47,7 @@
     <Compile Include="tabuleiro\Cor.cs" />
     <Compile Include="tabuleiro\Peca.cs" />
     <Compile Include="tabuleiro\Posicao.cs" />
+    <Compile Include="xadrez\PartidaDeXadrez.cs" />
     <Compile Include="xadrez\PosicaoXadrez.cs" />
     <Compile Include="tabuleiro\Tabuleiro.cs" />
     <Compile Include="tabuleiro\tabuleiroException.cs" />
