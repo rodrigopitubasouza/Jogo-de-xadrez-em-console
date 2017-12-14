@@ -13,9 +13,16 @@ namespace Xadrez_no_Console {
             imprimirPecasCapturadas(partida);
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
-            Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
-            if (partida.xeque) {
-                Console.WriteLine("Xeque!");
+            if (!partida.terminada) {
+                Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                if (partida.xeque) {
+                    Console.WriteLine("Você está em XEQUE!");
+                    Console.WriteLine();
+                }
+            }
+            else {
+                Console.WriteLine("XEQUE MATE");
+                Console.WriteLine("O Vencedor foi a " + partida.jogadorAtual);
             }
         }
 
@@ -27,7 +34,7 @@ namespace Xadrez_no_Console {
             Console.Write("Pretas: ");
             Console.ForegroundColor = ConsoleColor.Yellow;
             imprimirConjunto(partida.pecasCapturadasPorCor(Cor.Preta));
-            Console.ForegroundColor = ConsoleColor.Gray ;
+            Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine();
         }
 
@@ -77,8 +84,9 @@ namespace Xadrez_no_Console {
 
         public static PosicaoXadrez lerPosicaoXadrez() {
             string s = Console.ReadLine();
-            char coluna = s[0];
-            int linha = int.Parse(s[1] + "");
+            
+                char coluna = s[0];
+                int linha = int.Parse(s[1] + "");
             return new PosicaoXadrez(coluna, linha);
         }
 
@@ -103,6 +111,6 @@ namespace Xadrez_no_Console {
             }
         }
 
-        
+
     }
 }

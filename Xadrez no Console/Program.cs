@@ -33,12 +33,15 @@ namespace Xadrez_no_Console {
                         partida.realizaJogada(origem, destino);
                         
                     }
-                    catch (tabuleiroException e) {
+                    catch (Exception e) {
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
+                    
 
                 }
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
             catch (tabuleiroException e) {
 
