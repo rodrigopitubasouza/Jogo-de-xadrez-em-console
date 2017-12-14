@@ -37,7 +37,6 @@ namespace Xadrez_no_Console {
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
-                    
 
                 }
                 Console.Clear();
