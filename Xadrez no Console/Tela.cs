@@ -30,7 +30,7 @@ namespace Xadrez_no_Console {
                     else
                         Console.BackgroundColor = fundoOriginal;
                     imprimirPeca(tab.peca(i, j));
-
+                    Console.BackgroundColor = fundoOriginal;
                 }
                 Console.WriteLine();
 
