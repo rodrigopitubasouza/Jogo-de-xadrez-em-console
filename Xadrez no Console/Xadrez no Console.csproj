@@ -44,9 +44,23 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tabuleiro\Cor.cs" />
+    <Compile Include="tabuleiro\Peca.cs" />
+    <Compile Include="tabuleiro\Posicao.cs" />
+    <Compile Include="xadrez\PosicaoXadrez.cs" />
+    <Compile Include="tabuleiro\Tabuleiro.cs" />
+    <Compile Include="tabuleiro\tabuleiroException.cs" />
+    <Compile Include="Tela.cs" />
+    <Compile Include="xadrez\Bispo.cs" />
+    <Compile Include="xadrez\Cavalo.cs" />
+    <Compile Include="xadrez\Peao.cs" />
+    <Compile Include="xadrez\Rainha.cs" />
+    <Compile Include="xadrez\Rei.cs" />
+    <Compile Include="xadrez\Torre.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
